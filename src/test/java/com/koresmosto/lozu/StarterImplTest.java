@@ -17,4 +17,9 @@ class StarterImplTest {
     void get() {
         Assertions.assertEquals("Starter", starter.get());
     }
+
+    @Test
+    void getNegative() {
+        Assertions.assertNotEquals("starter", starter.get());
+    }
 }
