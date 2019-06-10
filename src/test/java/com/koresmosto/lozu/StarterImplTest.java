@@ -22,4 +22,9 @@ class StarterImplTest {
     void getNegative() {
         Assertions.assertNotEquals("starter", starter.get());
     }
+
+    @Test
+    void getNow() {
+        Assertions.assertThrows(UnsupportedOperationException.class, () -> starter.getNew());
+    }
 }
