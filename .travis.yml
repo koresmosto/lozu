@@ -3,11 +3,12 @@ language: java
 jdk:
   - openjdk8
 
-services:
-  - docker
-
 script:
-  - docker run -it -v $(pwd):/root/sources -w /root/sources maven:3.6.1-jdk-8 mvn clean install
+  mvn clean verify
+
+cache:
+  directories:
+    - $HOME/.m2
 
 notifications:
   slack:
