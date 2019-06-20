@@ -25,6 +25,11 @@ class StarterImplTest {
   }
 
   @Test
+  void mainCheckingForCovarage() {
+    Assertions.assertDoesNotThrow(() -> StarterImpl.main(null));
+  }
+
+  @Test
   void getNow() {
     Assertions.assertThrows(UnsupportedOperationException.class, () -> starter.getNew());
   }
