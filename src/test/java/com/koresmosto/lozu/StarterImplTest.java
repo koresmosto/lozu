@@ -6,26 +6,26 @@ import org.junit.jupiter.api.Test;
 
 class StarterImplTest {
 
-    private Starter starter;
+  private Starter starter;
 
-    @BeforeEach
-    void init() {
-        starter = new StarterImpl();
-    }
+  @BeforeEach
+  void init() {
+    starter = new StarterImpl();
+  }
 
-    @Test
-    void get() {
-        Assertions.assertEquals("Starter", starter.get());
-    }
+  @Test
+  void get() {
+    Assertions.assertEquals("Starter", starter.get());
+  }
 
-    @Test
-    void getNegative() {
-        Assertions.assertNotEquals("starter", starter.get());
-        Assertions.assertNotEquals("STARTER", starter.get());
-    }
+  @Test
+  void getNegative() {
+    Assertions.assertNotEquals("starter", starter.get());
+    Assertions.assertNotEquals("STARTER", starter.get());
+  }
 
-    @Test
-    void getNow() {
-        Assertions.assertThrows(UnsupportedOperationException.class, () -> starter.getNew());
-    }
+  @Test
+  void getNow() {
+    Assertions.assertThrows(UnsupportedOperationException.class, () -> starter.getNew());
+  }
 }

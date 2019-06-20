@@ -1,7 +1,7 @@
 package com.koresmosto.lozu;
 
 public interface Starter {
-    String get();
+  String get();
 
-    String getNew();
+  String getNew();
 }
