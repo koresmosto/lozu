@@ -12,6 +12,8 @@ public class StarterImpl implements Starter {
 
   public static void main(String[] args) {
     Starter starter = new StarterImpl();
-    System.out.println("Welcome " + starter.get());
+    if (args != null) {
+      System.out.println("Welcome " + starter.get());
+    }
   }
 }
