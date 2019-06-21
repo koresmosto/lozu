@@ -25,8 +25,13 @@ class StarterImplTest {
   }
 
   @Test
-  void mainCheckingForCovarage() {
+  void mainCheckingForCoverage() {
     Assertions.assertDoesNotThrow(() -> StarterImpl.main(null));
+  }
+
+  @Test
+  void mainCheckingForCoverageWithNotNull() {
+    Assertions.assertDoesNotThrow(() -> StarterImpl.main(new String[] {"Any param value"}));
   }
 
   @Test
