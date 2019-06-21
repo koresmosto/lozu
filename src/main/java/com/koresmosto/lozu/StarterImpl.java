@@ -1,7 +1,5 @@
 package com.koresmosto.lozu;
 
-import java.util.List;
-
 public class StarterImpl implements Starter {
 
   private Randomer randomer = new RandomerImpl();
@@ -14,19 +12,20 @@ public class StarterImpl implements Starter {
     throw new UnsupportedOperationException("Not implemented yet");
   }
 
-  public Object      getRandom(String randomerType) {
+  public Object getRandom(String randomerType) {
 
-      return randomer
-              .getRandom(randomerType);
+    return randomer.getRandom(randomerType);
   }
 
+  /**
+   * Standard java main method.
+   *
+   * @param args standard main method args
+   */
   public static void main(String[] args) {
     Starter starter = new StarterImpl();
-    if (args!= null)   {
-      System.out.println(  "Welcome " + starter.get())
-
-
-      ;
+    if (args != null) {
+      System.out.println("Welcome " + starter.get());
     }
   }
 }
