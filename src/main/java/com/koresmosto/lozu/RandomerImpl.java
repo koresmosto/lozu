@@ -7,7 +7,6 @@ public class RandomerImpl implements Randomer {
   @Override
   public Object getRandom(String randomerType) {
     Random random = new Random();
-    boolean bool = (Boolean) random.nextBoolean();
     switch (randomerType) {
       case "int":
         return random.nextInt();

@@ -44,6 +44,7 @@ class StarterImplTest {
     Assertions.assertNotNull(starter.getRandom("int"));
     Assertions.assertNotNull(starter.getRandom("double"));
     Assertions.assertNotNull(starter.getRandom("float"));
+    Assertions.assertNotNull(starter.getRandom("boolean"));
     Assertions.assertThrows(NullPointerException.class, () -> starter.getRandom(null));
   }
 }
