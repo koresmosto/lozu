@@ -1,13 +1,11 @@
 package com.koresmosto.lozu;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Random;
 import java.util.UUID;
 
 public class RandomerImpl implements Randomer {
   @Override
-  public Object getRandom(@NotNull String randomerType) {
+  public Object getRandom(String randomerType) {
     Random random = new Random();
     switch (randomerType) {
       case "int":

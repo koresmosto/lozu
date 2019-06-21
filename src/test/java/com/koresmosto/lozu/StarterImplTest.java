@@ -43,6 +43,7 @@ class StarterImplTest {
   void getRandom() {
     Assertions.assertNotNull(starter.getRandom("int"));
     Assertions.assertNotNull(starter.getRandom("double"));
-    Assertions.assertThrows(IllegalArgumentException.class, () -> starter.getRandom(null));
+    Assertions.assertNotNull(starter.getRandom("float"));
+    Assertions.assertThrows(NullPointerException.class, () -> starter.getRandom(null));
   }
 }
