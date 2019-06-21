@@ -38,4 +38,9 @@ class StarterImplTest {
   void getNow() {
     Assertions.assertThrows(UnsupportedOperationException.class, () -> starter.getNew());
   }
+
+  @Test
+  void getRandom() {
+    Assertions.assertNotNull(starter.getRandom("int"));
+  }
 }

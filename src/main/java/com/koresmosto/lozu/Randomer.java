@@ -1,9 +1,5 @@
 package com.koresmosto.lozu;
 
-public interface Starter {
-  String get();
-
-  String getNew();
-
+public interface Randomer {
   Object getRandom(String randomerType);
 }
