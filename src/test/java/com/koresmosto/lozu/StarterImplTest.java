@@ -20,9 +20,13 @@ class StarterImplTest {
 
   @Test
   void getNegative() {
-    Assertions.assertNotEquals("starter", starter.get());
-    Assertions.assertNotEquals("STARTER", starter.get());
-  }
+         Assertions.assertNotEquals("starter", starter.get());
+    Assertions.
+
+            assertNotEquals("STARTER", starter.get());
+
+
+        }
 
   @Test
   void mainCheckingForCoverage() {

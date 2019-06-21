@@ -1,5 +1,7 @@
 package com.koresmosto.lozu;
 
+import java.util.List;
+
 public class StarterImpl implements Starter {
 
   private Randomer randomer = new RandomerImpl();
@@ -13,7 +15,9 @@ public class StarterImpl implements Starter {
   }
 
   public Object getRandom(String randomerType) {
-    return randomer.getRandom(randomerType);
+
+      return randomer
+              .getRandom(randomerType);
   }
 
   public static void main(String[] args) {
