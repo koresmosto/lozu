@@ -11,18 +11,18 @@ class SpaceStarterTest {
   private Starter starter;
 
   @BeforeEach
-  void init() {
+  public void init() {
     starter = new SpaceStarter();
   }
 
   @Test
-  void get() {
+  public void get() {
     Assertions.assertEquals("Space Starter", starter.get());
   }
 
-  //  @Test
-  //  void getNew() {
-  //    assertThat(starter.getNew()).isNotNull();
-  //    assertThat(starter.getNew()).isNotBlank();
-  //  }
+  @Test
+  public void getNew() {
+    assertThat(starter.getNew()).isNotNull();
+    assertThat(starter.getNew()).isNotBlank();
+  }
 }
