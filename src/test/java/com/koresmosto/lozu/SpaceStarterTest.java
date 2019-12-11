@@ -25,4 +25,9 @@ class SpaceStarterTest {
     assertThat(starter.getNew()).isNotNull();
     assertThat(starter.getNew()).isNotBlank();
   }
+
+  @Test
+  public void getRandom() {
+    assertThat(starter.getRandom(null)).isNull();
+  }
 }

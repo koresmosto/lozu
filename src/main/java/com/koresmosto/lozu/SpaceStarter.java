@@ -20,7 +20,7 @@ public class SpaceStarter implements Starter {
   }
 
   @Override
-  public Object getRandom(String randomerType) {
+  public Object getRandom(String randomType) {
     return null;
   }
 }

@@ -5,5 +5,5 @@ public interface Starter {
 
   String getNew();
 
-  Object getRandom(String randomerType);
+  Object getRandom(String randomType);
 }

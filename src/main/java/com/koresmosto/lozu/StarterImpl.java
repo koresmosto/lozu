@@ -24,8 +24,8 @@ public class StarterImpl implements Starter {
     throw new UnsupportedOperationException("Not implemented yet");
   }
 
-  public Object getRandom(String randomerType) {
+  public Object getRandom(String randomType) {
 
-    return randomer.getRandom(randomerType);
+    return randomer.getRandom(randomType);
   }
 }
