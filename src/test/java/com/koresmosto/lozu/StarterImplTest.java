@@ -1,5 +1,6 @@
 package com.koresmosto.lozu;
 
+import java.util.function.Supplier;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -46,5 +47,10 @@ public class StarterImplTest {
     Assertions.assertNotNull(starter.getRandom("float"));
     Assertions.assertNotNull(starter.getRandom("boolean"));
     Assertions.assertThrows(NullPointerException.class, () -> starter.getRandom(null));
+  }
+
+  @Test
+  void getRandomException() {
+    Assertions.assertThrows(NullPointerException.class, () -> starter.getRandom(((Supplier<String>) () -> null).get()));
   }
 }
